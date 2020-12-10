@@ -20,7 +20,6 @@ public class Racional {
 
     public Racional(int a, int b) {
         this.a = a;
-
         if (b == 0) {
             this.b = 1;
         } else {
@@ -41,7 +40,6 @@ public class Racional {
     }
 
     public void setB(int b) {
-
         if (b == 0) {
             this.b = 1;
         } else {
@@ -59,7 +57,6 @@ public class Racional {
     }
 
     public void suma(Racional x) {
-
         if (this.b == x.b) {
             this.a = this.a + x.a;
         } else {
@@ -69,7 +66,6 @@ public class Racional {
     }
 
     public void resta(Racional x) {
-
         if (this.b == x.b) {
             this.a = this.a - x.a;
         } else {
@@ -78,10 +74,14 @@ public class Racional {
         }
     }
     
-    public void producto (Racional x) {
-        
+    public void producto(Racional x) {
         this.a = this.a * x.a;
         this.b = this.b * x.b;
+    }
+    
+     public void division(Racional x) {
+        this.a = this.a * x.b;
+        this.b = this.b * x.a;
     }
 
 }

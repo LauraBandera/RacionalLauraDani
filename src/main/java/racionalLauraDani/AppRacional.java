@@ -23,6 +23,8 @@ public class AppRacional {
         z.imprimirConsola();  
         k.imprimirConsola();   
         random.imprimirConsola();
+        
+        System.out.println("¿Son los valores iguales? " + Racional.igualdad(z,k));
     
     }
 }

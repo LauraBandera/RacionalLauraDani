@@ -23,6 +23,8 @@ public class Racional {
 
         if (b == 0) {
             this.b = 1;
+        } else {
+            this.b = b;
         }
     }
 
@@ -39,17 +41,36 @@ public class Racional {
     }
 
     public void setB(int b) {
-        
+
         if (b == 0) {
             this.b = 1;
-        }else{
+        } else {
             this.b = b;
         }
     }
-    
-    public void imprimirConsola(){
-        System.out.println("Número racional " + a +"/" + b);
+
+    public void imprimirConsola() {
+        System.out.println("Número racional " + a + "/" + b);
     }
-    
+
+    @Override
+    public String toString() {
+        return a + "/" + b;
+    }
+
+    public void suma(Racional x) {
+
+        if (this.b == x.b) {
+            this.a = this.a + x.a;
+
+        } else {
+
+            this.a = this.a * x.b + this.b * x.a;
+
+            this.b = this.b * x.b;
+
+        }
+
+    }
 
 }

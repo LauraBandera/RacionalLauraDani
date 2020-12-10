@@ -102,7 +102,7 @@ public class Racional {
         do {
             b = aleatorio.nextInt();
         }while(b == 0);
-        Racional r = new Racional();
+        Racional r = new Racional(a,b);
         return r;
     }
 

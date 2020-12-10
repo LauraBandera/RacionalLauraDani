@@ -20,9 +20,9 @@ public class AppRacional {
         
         random=random.aleatorio();
         
-        DecimalFormat df = new DecimalFormat("#.00");
-        
-        System.out.println(df.format( z + " - " + k + " - " + random  ));
+        z.imprimirConsola();  
+        k.imprimirConsola();   
+        random.imprimirConsola();
     
     }
 }

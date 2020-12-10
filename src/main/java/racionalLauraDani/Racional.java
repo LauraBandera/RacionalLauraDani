@@ -10,5 +10,5 @@ package racionalLauraDani;
  * @author laura
  */
 public class Racional {
-    
+    private int a /*numerador*/, b /*denominado*/;
 }

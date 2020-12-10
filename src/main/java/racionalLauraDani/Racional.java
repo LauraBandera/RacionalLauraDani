@@ -5,6 +5,8 @@
  */
 package racionalLauraDani;
 
+import java.util.Random;
+
 /**
  *
  * @author laura
@@ -12,6 +14,7 @@ package racionalLauraDani;
 public class Racional {
 
     private int a /*numerador*/, b /*denominado*/;
+    static Random aleatorio = new Random();
 
     public Racional() {
         this.a = 1;
@@ -73,22 +76,34 @@ public class Racional {
             this.b = this.b * x.b;
         }
     }
-    
+
     public void producto(Racional x) {
         this.a = this.a * x.a;
         this.b = this.b * x.b;
     }
-    
-     public void division(Racional x) {
+
+    public void division(Racional x) {
         this.a = this.a * x.b;
         this.b = this.b * x.a;
     }
-     
-     public boolean igualdad (Racional x, Racional y){
-         if(x.a==y.a && x.b==y.b){
-             return true;
-         }
-         return false;
-     }
+
+    public boolean igualdad(Racional x, Racional y) {
+        if (x.a == y.a && x.b == y.b) {
+            return true;
+        }
+        return false;
+    }
+
+    public Racional aleatorio() {
+        int a, b;
+        do {
+            a = aleatorio.nextInt();
+        }while(a == 0);
+        do {
+            b = aleatorio.nextInt();
+        }while(b == 0);
+        Racional r = new Racional();
+        return r;
+    }
 
 }

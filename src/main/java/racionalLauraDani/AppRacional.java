@@ -9,7 +9,7 @@ package racionalLauraDani;
  *
  * @author daniel
  */
-public class PruebaRacional {
+public class AppRacional {
     public static void main(String[] args) {
         
     }

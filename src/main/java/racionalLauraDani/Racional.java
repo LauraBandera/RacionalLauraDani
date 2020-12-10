@@ -82,9 +82,12 @@ public class Racional {
         this.b = this.b * x.b;
     }
 
-    public void division(Racional x) {
-        this.a = this.a * x.b;
-        this.b = this.b * x.a;
+    public Racional division(Racional x) {
+    	Racional div = new Racional ();
+        div.a = this.a * x.b;
+        div.b = this.b * x.a;
+        
+        return div;
     }
 
     public static boolean igualdad(Racional x, Racional y) {

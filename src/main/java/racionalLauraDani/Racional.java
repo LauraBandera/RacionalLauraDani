@@ -62,15 +62,20 @@ public class Racional {
 
         if (this.b == x.b) {
             this.a = this.a + x.a;
-
         } else {
-
             this.a = this.a * x.b + this.b * x.a;
-
             this.b = this.b * x.b;
-
         }
+    }
 
+    public void resta(Racional x) {
+
+        if (this.b == x.b) {
+            this.a = this.a - x.a;
+        } else {
+            this.a = this.a * x.b - this.b * x.a;
+            this.b = this.b * x.b;
+        }
     }
 
 }

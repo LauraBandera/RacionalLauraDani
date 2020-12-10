@@ -83,5 +83,12 @@ public class Racional {
         this.a = this.a * x.b;
         this.b = this.b * x.a;
     }
+     
+     public boolean igualdad (Racional x, Racional y){
+         if(x.a==y.a && x.b==y.b){
+             return true;
+         }
+         return false;
+     }
 
 }

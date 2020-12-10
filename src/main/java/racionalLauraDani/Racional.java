@@ -77,5 +77,11 @@ public class Racional {
             this.b = this.b * x.b;
         }
     }
+    
+    public void producto (Racional x) {
+        
+        this.a = this.a * x.a;
+        this.b = this.b * x.b;
+    }
 
 }

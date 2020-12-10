@@ -13,14 +13,17 @@ import java.util.Random;
  */
 public class Racional {
 
+	//Atributos de la clase
     private int a /*numerador*/, b /*denominado*/;
     static Random aleatorio = new Random();
 
+    //constructor por defecto
     public Racional() {
         this.a = 1;
         this.b = 1;
     }
 
+    //Construtor parametrizado
     public Racional(int a, int b) {
         this.a = a;
         if (b == 0) {
@@ -30,6 +33,7 @@ public class Racional {
         }
     }
 
+    //Métodos getters y setters
     public int getA() {
         return a;
     }
@@ -50,15 +54,18 @@ public class Racional {
         }
     }
 
+    //Impresión por consola
     public void imprimirConsola() {
         System.out.println("Número racional " + a + "/" + b);
     }
 
+    //Método autogenerado toString
     @Override
     public String toString() {
         return a + "/" + b;
     }
 
+    //Método suma
     public void suma(Racional x) {
         if (this.b == x.b) {
             this.a = this.a + x.a;
@@ -68,6 +75,7 @@ public class Racional {
         }
     }
 
+    //Método resta
     public void resta(Racional x) {
         if (this.b == x.b) {
             this.a = this.a - x.a;
@@ -77,11 +85,13 @@ public class Racional {
         }
     }
 
+    //Método producto
     public void producto(Racional x) {
         this.a = this.a * x.a;
         this.b = this.b * x.b;
     }
 
+    //Método división
     public Racional division(Racional x) {
     	Racional div = new Racional ();
         div.a = this.a * x.b;
@@ -90,6 +100,7 @@ public class Racional {
         return div;
     }
 
+    //Método para comprobar la igualdad en los valores
     public static boolean igualdad(Racional x, Racional y) {
         if (x.a == y.a && x.b == y.b) {
             return true;
@@ -97,6 +108,7 @@ public class Racional {
         return false;
     }
 
+    //Método de creación un objeto aleatorio
     public Racional aleatorio() {
         int a, b;
         do {

@@ -11,4 +11,11 @@ package racionalLauraDani;
  */
 public class Racional {
     private int a /*numerador*/, b /*denominado*/;
+
+    public Racional() {
+        this.a = 1;
+        this.b = 1;
+    }
+    
+    
 }

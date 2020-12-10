@@ -87,7 +87,7 @@ public class Racional {
         this.b = this.b * x.a;
     }
 
-    public static boolean igualdad(Racional x, Racional y) {
+    public boolean igualdad(Racional x, Racional y) {
         if (x.a == y.a && x.b == y.b) {
             return true;
         }

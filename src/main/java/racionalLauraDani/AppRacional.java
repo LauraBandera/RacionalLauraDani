@@ -38,7 +38,7 @@ public class AppRacional {
         System.out.println("La suma de z y k es: " + z.toString());
         
         //División de los valores actualizados de z y k
-        Racional div = z.division(k);
+        Racional div = Racional.division(k, z);
         
         System.out.println("El resultado de la división es: " + div.toString());
 

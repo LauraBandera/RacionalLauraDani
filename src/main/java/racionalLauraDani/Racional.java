@@ -92,17 +92,17 @@ public class Racional {
     }
 
     //Método división
-    public Racional division(Racional x) {
+    public static Racional division(Racional x, Racional z) {
     	Racional div = new Racional ();
-        div.a = this.a * x.b;
-        div.b = this.b * x.a;
+        div.a = z.a * x.b;
+        div.b = z.b * x.a;
         
         return div;
     }
 
     //Método para comprobar la igualdad en los valores
     public static boolean igualdad(Racional x, Racional y) {
-        if (x.a == y.a && x.b == y.b) {
+        if (x.a * y.b == x.b * y.a) {
             return true;
         }
         return false;
